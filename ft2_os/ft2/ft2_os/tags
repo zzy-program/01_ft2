@@ -1,0 +1,774 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APPLY_ADB_SIDELOAD	device.h	/^    APPLY_ADB_SIDELOAD = 4,$/;"	e	enum:Device::BuiltinAction
+APPLY_SDCARD	device.h	/^    APPLY_SDCARD = 2,$/;"	e	enum:Device::BuiltinAction
+ARRAY_SIZE	minui/graphics_drm.cpp	32;"	d	file:
+Alloc2d	screen_ui.cpp	/^static char** Alloc2d(size_t rows, size_t cols) {$/;"	f	file:
+BITS_PER_LONG	minui/events.cpp	34;"	d	file:
+BITS_TO_LONGS	minui/events.cpp	35;"	d	file:
+BRIGHTNESS_FILE	ui.cpp	/^static constexpr const char* BRIGHTNESS_FILE = "\/sys\/class\/leds\/lcd-backlight\/brightness";$/;"	v	file:
+Blank	minui/graphics_adf.cpp	/^void MinuiBackendAdf::Blank(bool blank) {$/;"	f	class:MinuiBackendAdf
+Blank	minui/graphics_drm.cpp	/^void MinuiBackendDrm::Blank(bool blank) {$/;"	f	class:MinuiBackendDrm
+Blank	minui/graphics_fbdev.cpp	/^void MinuiBackendFbdev::Blank(bool blank) {$/;"	f	class:MinuiBackendFbdev
+BuiltinAction	device.h	/^  enum BuiltinAction {$/;"	g	class:Device
+CACHE_ROOT	roots.cpp	/^static const char *CACHE_ROOT = "\/cache";$/;"	v	file:
+CauseCode	error_code.h	/^enum CauseCode {$/;"	g
+CheckKey	ui.cpp	/^RecoveryUI::KeyAction RecoveryUI::CheckKey(int key, bool is_long_press) {$/;"	f	class:RecoveryUI
+ClearText	screen_ui.cpp	/^void ScreenRecoveryUI::ClearText() {$/;"	f	class:ScreenRecoveryUI
+DEFAULT_LOCALE	recovery.cpp	/^static constexpr const char* DEFAULT_LOCALE = "en-US";$/;"	v	file:
+DETERMINATE	ui.h	/^    enum ProgressType { EMPTY, INDETERMINATE, DETERMINATE };$/;"	e	enum:RecoveryUI::ProgressType
+DEVPATHLENGTH	mtdutils/emmcutils.h	52;"	d
+DEVPATHLENGTH	mtdutils/encdevice.h	59;"	d
+DIMENSION_MAX	screen_ui.cpp	/^enum Dimension { PROGRESS = 0, TEXT = 1, ICON = 2, DIMENSION_MAX };$/;"	e	enum:Dimension	file:
+DIMMED	ui.h	/^    enum class ScreensaverState { DISABLED, NORMAL, DIMMED, OFF };$/;"	m	class:RecoveryUI::ScreensaverState
+DISABLED	ui.h	/^    enum class ScreensaverState { DISABLED, NORMAL, DIMMED, OFF };$/;"	m	class:RecoveryUI::ScreensaverState
+DM_CRYPT_BUF_SIZE	mtdutils/encdevice.h	60;"	d
+DM_TYPE_EXT	mtdutils/emmcutils.h	53;"	d
+DM_TYPE_EXT	mtdutils/encdevice.h	63;"	d
+DM_TYPE_VFAT	mtdutils/encdevice.h	62;"	d
+Device	device.h	/^  explicit Device(RecoveryUI* ui) : ui_(ui) {}$/;"	f	class:Device
+Device	device.h	/^class Device {$/;"	c
+DeviceInit	minui/graphics_adf.cpp	/^int MinuiBackendAdf::DeviceInit(adf_device* dev) {$/;"	f	class:MinuiBackendAdf
+Dimension	screen_ui.cpp	/^enum Dimension { PROGRESS = 0, TEXT = 1, ICON = 2, DIMENSION_MAX };$/;"	g	file:
+DisableNonMainCrtcs	minui/graphics_drm.cpp	/^void MinuiBackendDrm::DisableNonMainCrtcs(int fd, drmModeRes* resources, drmModeCrtc* main_crtc) {$/;"	f	class:MinuiBackendDrm
+DrawHorizontalRule	screen_ui.cpp	/^void ScreenRecoveryUI::DrawHorizontalRule(int* y) {$/;"	f	class:ScreenRecoveryUI
+DrawTextLine	screen_ui.cpp	/^void ScreenRecoveryUI::DrawTextLine(int x, int* y, const char* line, bool bold) const {$/;"	f	class:ScreenRecoveryUI
+DrawTextLines	screen_ui.cpp	/^void ScreenRecoveryUI::DrawTextLines(int x, int* y, const char* const* lines) const {$/;"	f	class:ScreenRecoveryUI
+DrmCreateSurface	minui/graphics_drm.cpp	/^GRSurfaceDrm* MinuiBackendDrm::DrmCreateSurface(int width, int height) {$/;"	f	class:MinuiBackendDrm
+DrmDestroySurface	minui/graphics_drm.cpp	/^void MinuiBackendDrm::DrmDestroySurface(GRSurfaceDrm* surface) {$/;"	f	class:MinuiBackendDrm
+DrmDisableCrtc	minui/graphics_drm.cpp	/^void MinuiBackendDrm::DrmDisableCrtc(int drm_fd, drmModeCrtc* crtc) {$/;"	f	class:MinuiBackendDrm
+DrmEnableCrtc	minui/graphics_drm.cpp	/^void MinuiBackendDrm::DrmEnableCrtc(int drm_fd, drmModeCrtc* crtc, GRSurfaceDrm* surface) {$/;"	f	class:MinuiBackendDrm
+DumpFramebuffer	screen_ui.cpp	/^char* ScreenRecoveryUI::DumpFramebuffer (Icon icon, int *width, int *height, int *bpp) {$/;"	f	class:ScreenRecoveryUI
+DumpFramebuffer	ui.h	/^    virtual char* DumpFramebuffer(Icon icon, int *width, int *height, int *bpp) { return NULL; };$/;"	f	class:RecoveryUI
+EMMCUTILS_H	mtdutils/emmcutils.h	21;"	d
+EMMC_DEFAULT_PAGE_SIZE	mtdutils/emmcutils.h	42;"	d
+EMMC_MISC_COMMAND_PAGE	mtdutils/emmcutils.h	46;"	d
+EMMC_MISC_PAGE0_PAGE	mtdutils/emmcutils.h	45;"	d
+EMMC_MISC_PAGES	mtdutils/emmcutils.h	43;"	d
+EMMC_PARTITION_EXTRA_NAME	mtdutils/emmcutils.h	48;"	d
+EMMC_PARTITION_MISC_NAME	mtdutils/emmcutils.h	40;"	d
+EMMC_PROC_FILENAME	mtdutils/emmcutils.c	44;"	d	file:
+EMPTY	ui.h	/^    enum ProgressType { EMPTY, INDETERMINATE, DETERMINATE };$/;"	e	enum:RecoveryUI::ProgressType
+ENCDEVICE_H	mtdutils/encdevice.h	21;"	d
+ENC_KEY_OFFSET_EXT	mtdutils/emmcutils.h	49;"	d
+ENC_KEY_OFFSET_FAT	mtdutils/emmcutils.h	50;"	d
+ENQUEUE	ui.h	/^    enum KeyAction { ENQUEUE, TOGGLE, REBOOT, IGNORE };$/;"	e	enum:RecoveryUI::KeyAction
+ERASING	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+ERASING	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+ERROR	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+ERROR	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+EXPAND	common.h	26;"	d
+EndMenu	screen_ui.cpp	/^void ScreenRecoveryUI::EndMenu() {$/;"	f	class:ScreenRecoveryUI
+EnqueueKey	ui.cpp	/^void RecoveryUI::EnqueueKey(int key_code) {$/;"	f	class:RecoveryUI
+ErrorCode	error_code.h	/^enum ErrorCode {$/;"	g
+FACTORYRESET	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+FIRMWARE_INSTALLING	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+FindMainMonitor	minui/graphics_drm.cpp	/^drmModeConnector* MinuiBackendDrm::FindMainMonitor(int fd, drmModeRes* resources,$/;"	f	class:MinuiBackendDrm
+Flip	minui/graphics_adf.cpp	/^GRSurface* MinuiBackendAdf::Flip() {$/;"	f	class:MinuiBackendAdf
+Flip	minui/graphics_drm.cpp	/^GRSurface* MinuiBackendDrm::Flip() {$/;"	f	class:MinuiBackendDrm
+Flip	minui/graphics_fbdev.cpp	/^GRSurface* MinuiBackendFbdev::Flip() {$/;"	f	class:MinuiBackendFbdev
+FlushKeys	ui.cpp	/^void RecoveryUI::FlushKeys() {$/;"	f	class:RecoveryUI
+GRFont	minui/include/minui/minui.h	/^struct GRFont {$/;"	s
+GRSurface	minui/include/minui/minui.h	/^struct GRSurface {$/;"	s
+GRSurfaceAdf	minui/graphics_adf.h	/^class GRSurfaceAdf : public GRSurface {$/;"	c
+GRSurfaceDrm	minui/graphics_drm.h	/^class GRSurfaceDrm : public GRSurface {$/;"	c
+GRSurfaceDrms	minui/graphics_drm.h	/^  GRSurfaceDrm* GRSurfaceDrms[2];$/;"	m	class:MinuiBackendDrm
+GetAnimationBaseline	screen_ui.cpp	/^int ScreenRecoveryUI::GetAnimationBaseline() {$/;"	f	class:ScreenRecoveryUI
+GetCurrentFrame	screen_ui.cpp	/^GRSurface* ScreenRecoveryUI::GetCurrentFrame() {$/;"	f	class:ScreenRecoveryUI
+GetCurrentText	screen_ui.cpp	/^GRSurface* ScreenRecoveryUI::GetCurrentText() {$/;"	f	class:ScreenRecoveryUI
+GetMenuItems	device.cpp	/^const char* const* Device::GetMenuItems() {$/;"	f	class:Device
+GetProgressBaseline	screen_ui.cpp	/^int ScreenRecoveryUI::GetProgressBaseline() {$/;"	f	class:ScreenRecoveryUI
+GetTextBaseline	screen_ui.cpp	/^int ScreenRecoveryUI::GetTextBaseline() {$/;"	f	class:ScreenRecoveryUI
+GetUI	device.h	/^  virtual RecoveryUI* GetUI() {$/;"	f	class:Device
+HEADER	screen_ui.h	/^        HEADER, MENU, MENU_SEL_BG, MENU_SEL_BG_ACTIVE, MENU_SEL_FG, LOG, TEXT_FILL, INFO$/;"	e	enum:ScreenRecoveryUI::UIElement
+HEADER_SIZE	mtdutils/flash_image.c	32;"	d	file:
+HTC_IOCTL_SDSERVICE	mtdutils/encdevice.h	33;"	d
+HTC_SD_KEY_DECRYPT	mtdutils/encdevice.h	/^    HTC_SD_KEY_DECRYPT,$/;"	e	enum:__anon5
+HTC_SD_KEY_ENCRYPT	mtdutils/encdevice.h	/^    HTC_SD_KEY_ENCRYPT = 0x33,$/;"	e	enum:__anon5
+HandleMenuKey	device.cpp	/^int Device::HandleMenuKey(int key, bool visible) {$/;"	f	class:Device
+HasThreeButtons	ui.cpp	/^bool RecoveryUI::HasThreeButtons() {$/;"	f	class:RecoveryUI
+ICON	screen_ui.cpp	/^enum Dimension { PROGRESS = 0, TEXT = 1, ICON = 2, DIMENSION_MAX };$/;"	e	enum:Dimension	file:
+ICON_NUM	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+ICON_NUM	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+IGNORE	ui.h	/^    enum KeyAction { ENQUEUE, TOGGLE, REBOOT, IGNORE };$/;"	e	enum:RecoveryUI::KeyAction
+INDETERMINATE	ui.h	/^    enum ProgressType { EMPTY, INDETERMINATE, DETERMINATE };$/;"	e	enum:RecoveryUI::ProgressType
+INFO	screen_ui.h	/^        HEADER, MENU, MENU_SEL_BG, MENU_SEL_BG_ACTIVE, MENU_SEL_FG, LOG, TEXT_FILL, INFO$/;"	e	enum:ScreenRecoveryUI::UIElement
+INSTALLING_UPDATE	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+INSTALLING_UPDATE	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+INSTALLING_WARNING	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+INSTALL_CORRUPT	recovery.cpp	80;"	d	file:
+INSTALL_ERROR	recovery.cpp	79;"	d	file:
+INSTALL_NONE	recovery.cpp	78;"	d	file:
+INSTALL_SUCCESS	recovery.cpp	77;"	d	file:
+Icon	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	g	class:RecoveryUI
+Icon	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, ICON_NUM };$/;"	g	class:RecoveryUI
+Init	minui/graphics_adf.cpp	/^GRSurface* MinuiBackendAdf::Init() {$/;"	f	class:MinuiBackendAdf
+Init	minui/graphics_drm.cpp	/^GRSurface* MinuiBackendDrm::Init() {$/;"	f	class:MinuiBackendDrm
+Init	minui/graphics_fbdev.cpp	/^GRSurface* MinuiBackendFbdev::Init() {$/;"	f	class:MinuiBackendFbdev
+Init	screen_ui.cpp	/^bool ScreenRecoveryUI::Init(const std::string& locale) {$/;"	f	class:ScreenRecoveryUI
+Init	ui.cpp	/^bool RecoveryUI::Init(const std::string& locale) {$/;"	f	class:RecoveryUI
+InitScreensaver	ui.cpp	/^bool RecoveryUI::InitScreensaver() {$/;"	f	class:RecoveryUI
+InitTextParams	screen_ui.cpp	/^bool ScreenRecoveryUI::InitTextParams() {$/;"	f	class:ScreenRecoveryUI
+InputThreadLoop	ui.cpp	/^static void* InputThreadLoop(void*) {$/;"	f	file:
+InterfaceInit	minui/graphics_adf.cpp	/^int MinuiBackendAdf::InterfaceInit() {$/;"	f	class:MinuiBackendAdf
+InvokeMenuItem	device.cpp	/^Device::BuiltinAction Device::InvokeMenuItem(int menu_position) {$/;"	f	class:Device
+IsKeyPressed	ui.cpp	/^bool RecoveryUI::IsKeyPressed(int key) {$/;"	f	class:RecoveryUI
+IsLongPress	ui.cpp	/^bool RecoveryUI::IsLongPress() {$/;"	f	class:RecoveryUI
+IsTextVisible	screen_ui.cpp	/^bool ScreenRecoveryUI::IsTextVisible() {$/;"	f	class:ScreenRecoveryUI
+IsUsbConnected	ui.cpp	/^bool RecoveryUI::IsUsbConnected() {$/;"	f	class:RecoveryUI
+KeyAction	ui.h	/^    enum KeyAction { ENQUEUE, TOGGLE, REBOOT, IGNORE };$/;"	g	class:RecoveryUI
+KeyLongPress	screen_ui.cpp	/^void ScreenRecoveryUI::KeyLongPress(int) {$/;"	f	class:ScreenRecoveryUI
+KeyLongPress	ui.cpp	/^void RecoveryUI::KeyLongPress(int) {$/;"	f	class:RecoveryUI
+LANDSCAPE	screen_ui.cpp	/^enum Layout { PORTRAIT = 0, PORTRAIT_LARGE = 1, LANDSCAPE = 2, LANDSCAPE_LARGE = 3, LAYOUT_MAX };$/;"	e	enum:Layout	file:
+LANDSCAPE_LARGE	screen_ui.cpp	/^enum Layout { PORTRAIT = 0, PORTRAIT_LARGE = 1, LANDSCAPE = 2, LANDSCAPE_LARGE = 3, LAYOUT_MAX };$/;"	e	enum:Layout	file:
+LAYOUT_MAX	screen_ui.cpp	/^enum Layout { PORTRAIT = 0, PORTRAIT_LARGE = 1, LANDSCAPE = 2, LANDSCAPE_LARGE = 3, LAYOUT_MAX };$/;"	e	enum:Layout	file:
+LOCAL_CFLAGS	Android.mk	/^LOCAL_CFLAGS := -Wall -Wno-unused-parameter -Werror$/;"	m
+LOCAL_CFLAGS	Android.mk	/^LOCAL_CFLAGS := -Wno-unused-parameter -Werror$/;"	m
+LOCAL_CFLAGS	minadbd/Android.mk	/^LOCAL_CFLAGS := $(minadbd_cflags)$/;"	m
+LOCAL_CFLAGS	minui/Android.mk	/^LOCAL_CFLAGS := -Werror$/;"	m
+LOCAL_CLANG	Android.mk	/^LOCAL_CLANG := true$/;"	m
+LOCAL_CLANG	minadbd/Android.mk	/^LOCAL_CLANG := true$/;"	m
+LOCAL_CLANG	mtdutils/Android.mk	/^LOCAL_CLANG := true$/;"	m
+LOCAL_CONLY_FLAGS	minadbd/Android.mk	/^LOCAL_CONLY_FLAGS := -Wimplicit-function-declaration$/;"	m
+LOCAL_C_INCLUDES	minadbd/Android.mk	/^LOCAL_C_INCLUDES := $(LOCAL_PATH) system\/core\/adb$/;"	m
+LOCAL_C_INCLUDES	minadbd/Android.mk	/^LOCAL_C_INCLUDES := bootable\/recovery system\/core\/adb$/;"	m
+LOCAL_C_INCLUDES	minui/Android.mk	/^LOCAL_C_INCLUDES := $(LOCAL_PATH)\/include$/;"	m
+LOCAL_C_INCLUDES	mtdutils/Android.mk	/^LOCAL_C_INCLUDES := system\/extras\/ext4_utils\/include\/ext4_utils\/$/;"	m
+LOCAL_EXPORT_C_INCLUDE_DIRS	minui/Android.mk	/^LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)\/include$/;"	m
+LOCAL_FORCE_STATIC_EXECUTABLE	Android.mk	/^LOCAL_FORCE_STATIC_EXECUTABLE := true$/;"	m
+LOCAL_HAL_STATIC_LIBRARIES	Android.mk	/^LOCAL_HAL_STATIC_LIBRARIES := libhealthd$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := libmounts_ft2$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := librecovery_ft2$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := recovery_ft2$/;"	m
+LOCAL_MODULE	minadbd/Android.mk	/^LOCAL_MODULE := libminadbd_ft2$/;"	m
+LOCAL_MODULE	minadbd/Android.mk	/^LOCAL_MODULE := minadbd_test_ft2$/;"	m
+LOCAL_MODULE	minui/Android.mk	/^LOCAL_MODULE := libminui_ft2$/;"	m
+LOCAL_MODULE	mtdutils/Android.mk	/^LOCAL_MODULE := flash_image_ft2$/;"	m
+LOCAL_MODULE	mtdutils/Android.mk	/^LOCAL_MODULE := libmtdutils_ft2$/;"	m
+LOCAL_MODULE_PATH	Android.mk	/^LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)\/sbin$/;"	m
+LOCAL_MODULE_TAGS	mtdutils/Android.mk	/^LOCAL_MODULE_TAGS := eng$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	minadbd/Android.mk	/^LOCAL_PATH:= $(call my-dir)$/;"	m
+LOCAL_PATH	minui/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	mtdutils/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_SHARED_LIBRARIES	minadbd/Android.mk	/^LOCAL_SHARED_LIBRARIES := liblog libbase libcutils$/;"	m
+LOCAL_SHARED_LIBRARIES	minui/Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SHARED_LIBRARIES	mtdutils/Android.mk	/^LOCAL_SHARED_LIBRARIES := libcutils liblog libc$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := mounts.cpp$/;"	m
+LOCAL_SRC_FILES	minadbd/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	minadbd/Android.mk	/^LOCAL_SRC_FILES := fuse_adb_provider_test.cpp$/;"	m
+LOCAL_SRC_FILES	minui/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	mtdutils/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	mtdutils/Android.mk	/^LOCAL_SRC_FILES := flash_image.c$/;"	m
+LOCAL_STATIC_LIBRARIES	Android.mk	/^LOCAL_STATIC_LIBRARIES := \\$/;"	m
+LOCAL_STATIC_LIBRARIES	minadbd/Android.mk	/^LOCAL_STATIC_LIBRARIES := libcrypto libbase$/;"	m
+LOCAL_STATIC_LIBRARIES	minadbd/Android.mk	/^LOCAL_STATIC_LIBRARIES := libminadbd_ft2$/;"	m
+LOCAL_STATIC_LIBRARIES	minui/Android.mk	/^LOCAL_STATIC_LIBRARIES := \\$/;"	m
+LOCAL_STATIC_LIBRARIES	mtdutils/Android.mk	/^LOCAL_STATIC_LIBRARIES := libext4_utils libz libcrypto_static libhtcrecvyutils$/;"	m
+LOCAL_STATIC_LIBRARIES	mtdutils/Android.mk	/^LOCAL_STATIC_LIBRARIES := libmtdutils_ft2$/;"	m
+LOCAL_WHOLE_STATIC_LIBRARIES	minadbd/Android.mk	/^LOCAL_WHOLE_STATIC_LIBRARIES := libadbd$/;"	m
+LOCAL_WHOLE_STATIC_LIBRARIES	minui/Android.mk	/^LOCAL_WHOLE_STATIC_LIBRARIES := \\$/;"	m
+LOG	screen_ui.h	/^        HEADER, MENU, MENU_SEL_BG, MENU_SEL_BG_ACTIVE, MENU_SEL_FG, LOG, TEXT_FILL, INFO$/;"	e	enum:ScreenRecoveryUI::UIElement
+LOGE	mtdutils/emmcutils.h	37;"	d
+LOGI	mtdutils/emmcutils.h	38;"	d
+LOG_TAG	mtdutils/flash_image.c	28;"	d	file:
+LOG_TAG	mtdutils/flash_image.c	30;"	d	file:
+LONG_PRESS_HELP	screen_ui.cpp	/^static const char* LONG_PRESS_HELP[] = {$/;"	v	file:
+Layout	screen_ui.cpp	/^enum Layout { PORTRAIT = 0, PORTRAIT_LARGE = 1, LANDSCAPE = 2, LANDSCAPE_LARGE = 3, LAYOUT_MAX };$/;"	g	file:
+LoadAnimation	screen_ui.cpp	/^void ScreenRecoveryUI::LoadAnimation() {$/;"	f	class:ScreenRecoveryUI
+LoadBitmap	screen_ui.cpp	/^void ScreenRecoveryUI::LoadBitmap(const char* filename, GRSurface** surface) {$/;"	f	class:ScreenRecoveryUI
+LoadLocalizedBitmap	screen_ui.cpp	/^void ScreenRecoveryUI::LoadLocalizedBitmap(const char* filename, GRSurface** surface) {$/;"	f	class:ScreenRecoveryUI
+MAX_BRIGHTNESS_FILE	ui.cpp	/^static constexpr const char* MAX_BRIGHTNESS_FILE = "\/sys\/class\/leds\/lcd-backlight\/max_brightness";$/;"	v	file:
+MAX_CRYPTO_TYPE_NAME_LEN	mtdutils/encdevice.h	76;"	d
+MAX_DEVICES	minui/events.cpp	31;"	d	file:
+MAX_MISC_FDS	minui/events.cpp	32;"	d	file:
+MD5_DIGEST_LENGTH	mtdutils/encdevice.h	103;"	d
+MENU	screen_ui.h	/^        HEADER, MENU, MENU_SEL_BG, MENU_SEL_BG_ACTIVE, MENU_SEL_FG, LOG, TEXT_FILL, INFO$/;"	e	enum:ScreenRecoveryUI::UIElement
+MENU_ACTIONS	device.cpp	/^static const Device::BuiltinAction MENU_ACTIONS[] = {$/;"	v	file:
+MENU_ACTIONS_remove_factory_reset_for_s_on	device.cpp	/^static const Device::BuiltinAction MENU_ACTIONS_remove_factory_reset_for_s_on[] = {$/;"	v	file:
+MENU_ITEMS	device.cpp	/^static const char* MENU_ITEMS[] = {$/;"	v	file:
+MENU_ITEMS_remove_factory_reset_for_s_on	device.cpp	/^static const char* MENU_ITEMS_remove_factory_reset_for_s_on[] = {$/;"	v	file:
+MENU_SEL_BG	screen_ui.h	/^        HEADER, MENU, MENU_SEL_BG, MENU_SEL_BG_ACTIVE, MENU_SEL_FG, LOG, TEXT_FILL, INFO$/;"	e	enum:ScreenRecoveryUI::UIElement
+MENU_SEL_BG_ACTIVE	screen_ui.h	/^        HEADER, MENU, MENU_SEL_BG, MENU_SEL_BG_ACTIVE, MENU_SEL_FG, LOG, TEXT_FILL, INFO$/;"	e	enum:ScreenRecoveryUI::UIElement
+MENU_SEL_FG	screen_ui.h	/^        HEADER, MENU, MENU_SEL_BG, MENU_SEL_BG_ACTIVE, MENU_SEL_FG, LOG, TEXT_FILL, INFO$/;"	e	enum:ScreenRecoveryUI::UIElement
+MINADBD_H__	minadbd/minadbd.h	18;"	d
+MOUNTS_H_	mounts.h	18;"	d
+MOUNT_SYSTEM	device.h	/^    MOUNT_SYSTEM = 10,$/;"	e	enum:Device::BuiltinAction
+MTDUTILS_H_	mtdutils/mtdutils.h	18;"	d
+MTDUTILS_MOUNTS_H_	mtdutils/mounts.h	18;"	d
+MTD_PROC_FILENAME	mtdutils/mtdutils.c	68;"	d	file:
+MinuiBackend	minui/graphics.h	/^class MinuiBackend {$/;"	c
+MinuiBackendAdf	minui/graphics_adf.cpp	/^MinuiBackendAdf::MinuiBackendAdf() : intf_fd(-1), dev(), n_surfaces(0), surfaces() {}$/;"	f	class:MinuiBackendAdf
+MinuiBackendAdf	minui/graphics_adf.h	/^class MinuiBackendAdf : public MinuiBackend {$/;"	c
+MinuiBackendDrm	minui/graphics_drm.cpp	/^MinuiBackendDrm::MinuiBackendDrm()$/;"	f	class:MinuiBackendDrm
+MinuiBackendDrm	minui/graphics_drm.h	/^class MinuiBackendDrm : public MinuiBackend {$/;"	c
+MinuiBackendFbdev	minui/graphics_fbdev.cpp	/^MinuiBackendFbdev::MinuiBackendFbdev() : gr_draw(nullptr), fb_fd(-1) {}$/;"	f	class:MinuiBackendFbdev
+MinuiBackendFbdev	minui/graphics_fbdev.h	/^class MinuiBackendFbdev : public MinuiBackend {$/;"	c
+MountedVolume	mounts.cpp	/^struct MountedVolume {$/;"	s	file:
+MountedVolume	mtdutils/mounts.c	/^struct MountedVolume {$/;"	s	file:
+MountedVolume	mtdutils/mounts.h	/^typedef struct MountedVolume MountedVolume;$/;"	t	typeref:struct:MountedVolume
+MountsState	mtdutils/mounts.c	/^} MountsState;$/;"	t	typeref:struct:__anon6	file:
+MtdPartition	mtdutils/mtdutils.c	/^struct MtdPartition {$/;"	s	file:
+MtdPartition	mtdutils/mtdutils.h	/^typedef struct MtdPartition MtdPartition;$/;"	t	typeref:struct:MtdPartition
+MtdReadContext	mtdutils/mtdutils.c	/^struct MtdReadContext {$/;"	s	file:
+MtdReadContext	mtdutils/mtdutils.h	/^typedef struct MtdReadContext MtdReadContext;$/;"	t	typeref:struct:MtdReadContext
+MtdState	mtdutils/mtdutils.c	/^} MtdState;$/;"	t	typeref:struct:__anon4	file:
+MtdWriteContext	mtdutils/mtdutils.c	/^struct MtdWriteContext {$/;"	s	file:
+MtdWriteContext	mtdutils/mtdutils.h	/^typedef struct MtdWriteContext MtdWriteContext;$/;"	t	typeref:struct:MtdWriteContext
+NDEBUG	mtdutils/mtdutils.c	26;"	d	file:
+NONE	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+NONE	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+NORMAL	ui.h	/^    enum class ScreensaverState { DISABLED, NORMAL, DIMMED, OFF };$/;"	m	class:RecoveryUI::ScreensaverState
+NO_ACTION	device.h	/^    NO_ACTION = 0,$/;"	e	enum:Device::BuiltinAction
+NO_COMMAND	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+NO_COMMAND	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+OnInputEvent	ui.cpp	/^int RecoveryUI::OnInputEvent(int fd, uint32_t epevents) {$/;"	f	class:RecoveryUI
+OnKeyDetected	ui.cpp	/^void RecoveryUI::OnKeyDetected(int key_code) {$/;"	f	class:RecoveryUI
+PERSISTENT_PROPERTY_DIR	mtdutils/sdutils.c	40;"	d	file:
+PORTRAIT	screen_ui.cpp	/^enum Layout { PORTRAIT = 0, PORTRAIT_LARGE = 1, LANDSCAPE = 2, LANDSCAPE_LARGE = 3, LAYOUT_MAX };$/;"	e	enum:Layout	file:
+PORTRAIT_LARGE	screen_ui.cpp	/^enum Layout { PORTRAIT = 0, PORTRAIT_LARGE = 1, LANDSCAPE = 2, LANDSCAPE_LARGE = 3, LAYOUT_MAX };$/;"	e	enum:Layout	file:
+PROC_MOUNTS_FILENAME	mtdutils/mounts.c	61;"	d	file:
+PROGRESS	screen_ui.cpp	/^enum Dimension { PROGRESS = 0, TEXT = 1, ICON = 2, DIMENSION_MAX };$/;"	e	enum:Dimension	file:
+PROGRESSBAR_STATES	ui.h	/^    static const int PROGRESSBAR_STATES = 6;$/;"	m	class:RecoveryUI
+PixelsFromDp	screen_ui.cpp	/^int ScreenRecoveryUI::PixelsFromDp(int dp) const {$/;"	f	class:ScreenRecoveryUI
+PostWipeData	device.h	/^  virtual bool PostWipeData() {$/;"	f	class:Device
+PreWipeData	device.cpp	/^bool Device::PreWipeData() {$/;"	f	class:Device
+Print	screen_ui.cpp	/^void ScreenRecoveryUI::Print(const char* fmt, ...) {$/;"	f	class:ScreenRecoveryUI
+PrintOnScreenOnly	screen_ui.cpp	/^void ScreenRecoveryUI::PrintOnScreenOnly(const char *fmt, ...) {$/;"	f	class:ScreenRecoveryUI
+PrintV	screen_ui.cpp	/^void ScreenRecoveryUI::PrintV(const char* fmt, bool copy_to_stdout, va_list ap) {$/;"	f	class:ScreenRecoveryUI
+ProcessKey	ui.cpp	/^void RecoveryUI::ProcessKey(int key_code, int updown) {$/;"	f	class:RecoveryUI
+ProgressThreadLoop	screen_ui.cpp	/^void ScreenRecoveryUI::ProgressThreadLoop() {$/;"	f	class:ScreenRecoveryUI
+ProgressThreadStartRoutine	screen_ui.cpp	/^void* ScreenRecoveryUI::ProgressThreadStartRoutine(void* data) {$/;"	f	class:ScreenRecoveryUI
+ProgressType	ui.h	/^    enum ProgressType { EMPTY, INDETERMINATE, DETERMINATE };$/;"	g	class:RecoveryUI
+PutChar	screen_ui.cpp	/^void ScreenRecoveryUI::PutChar(char ch) {$/;"	f	class:ScreenRecoveryUI
+REBOOT	device.h	/^    REBOOT = 1,$/;"	e	enum:Device::BuiltinAction
+REBOOT	ui.h	/^    enum KeyAction { ENQUEUE, TOGGLE, REBOOT, IGNORE };$/;"	e	enum:RecoveryUI::KeyAction
+REBOOT_BOOTLOADER	device.h	/^    REBOOT_BOOTLOADER = 7,$/;"	e	enum:Device::BuiltinAction
+REBOOT_TO_ERASEMODEMST1_2	device.h	/^    REBOOT_TO_ERASEMODEMST1_2 = 12,$/;"	e	enum:Device::BuiltinAction
+RECOVERY_COMMON_H	common.h	18;"	d
+RECOVERY_PRINT_SHA1_H	print_sha1.h	18;"	d
+RECOVERY_ROOTS_H_	roots.h	18;"	d
+RECOVERY_SCREEN_UI_H	screen_ui.h	18;"	d
+RECOVERY_UI_H	ui.h	18;"	d
+REGULAR_HELP	screen_ui.cpp	/^static const char* REGULAR_HELP[] = {$/;"	v	file:
+RUN_GRAPHICS_TEST	device.h	/^    RUN_GRAPHICS_TEST = 11,$/;"	e	enum:Device::BuiltinAction
+RecoveryUI	ui.cpp	/^RecoveryUI::RecoveryUI()$/;"	f	class:RecoveryUI
+RecoveryUI	ui.h	/^class RecoveryUI {$/;"	c
+Redraw	screen_ui.cpp	/^void ScreenRecoveryUI::Redraw() {$/;"	f	class:ScreenRecoveryUI
+SDCARD_ROOT	roots.cpp	/^static const char* SDCARD_ROOT = "\/sdcard";$/;"	v	file:
+SDENC_SB_MAGIC	mtdutils/encdevice.h	100;"	d
+SDENC_SB_VER1	mtdutils/encdevice.h	101;"	d
+SDENC_SB_VER2	mtdutils/encdevice.h	102;"	d
+SDUTILS_H	mtdutils/sdutils.h	21;"	d
+SHUTDOWN	device.h	/^    SHUTDOWN = 8,$/;"	e	enum:Device::BuiltinAction
+STRINGIFY	common.h	25;"	d
+SURFACE_DATA_ALIGNMENT	minui/resources.cpp	37;"	d	file:
+S_OFF	device.cpp	23;"	d	file:
+S_ON	device.cpp	22;"	d	file:
+ScreenRecoveryUI	screen_ui.cpp	/^ScreenRecoveryUI::ScreenRecoveryUI()$/;"	f	class:ScreenRecoveryUI
+ScreenRecoveryUI	screen_ui.h	/^class ScreenRecoveryUI : public RecoveryUI {$/;"	c
+ScreensaverState	ui.h	/^    enum class ScreensaverState { DISABLED, NORMAL, DIMMED, OFF };$/;"	c	class:RecoveryUI
+SelectMenu	screen_ui.cpp	/^int ScreenRecoveryUI::SelectMenu(int sel) {$/;"	f	class:ScreenRecoveryUI
+SetBackground	screen_ui.cpp	/^void ScreenRecoveryUI::SetBackground(Icon icon) {$/;"	f	class:ScreenRecoveryUI
+SetColor	screen_ui.cpp	/^void ScreenRecoveryUI::SetColor(UIElement e) {$/;"	f	class:ScreenRecoveryUI
+SetDisplayedFramebuffer	minui/graphics_fbdev.cpp	/^void MinuiBackendFbdev::SetDisplayedFramebuffer(unsigned n) {$/;"	f	class:MinuiBackendFbdev
+SetEnableReboot	ui.cpp	/^void RecoveryUI::SetEnableReboot(bool enabled) {$/;"	f	class:RecoveryUI
+SetEnableToggle	ui.cpp	/^void RecoveryUI::SetEnableToggle(bool enabled) {$/;"	f	class:RecoveryUI
+SetLocale	ui.cpp	/^void RecoveryUI::SetLocale(const std::string& new_locale) {$/;"	f	class:RecoveryUI
+SetProgress	screen_ui.cpp	/^void ScreenRecoveryUI::SetProgress(float fraction) {$/;"	f	class:ScreenRecoveryUI
+SetProgressType	screen_ui.cpp	/^void ScreenRecoveryUI::SetProgressType(ProgressType type) {$/;"	f	class:ScreenRecoveryUI
+SetStage	screen_ui.cpp	/^void ScreenRecoveryUI::SetStage(int current, int max) {$/;"	f	class:ScreenRecoveryUI
+SetSystemUpdateText	screen_ui.cpp	/^void ScreenRecoveryUI::SetSystemUpdateText(bool security_update) {$/;"	f	class:ScreenRecoveryUI
+ShowProgress	screen_ui.cpp	/^void ScreenRecoveryUI::ShowProgress(float portion, float seconds) {$/;"	f	class:ScreenRecoveryUI
+ShowText	screen_ui.cpp	/^void ScreenRecoveryUI::ShowText(bool visible) {$/;"	f	class:ScreenRecoveryUI
+StartMenu	screen_ui.cpp	/^void ScreenRecoveryUI::StartMenu(const char* const * headers, const char* const * items,$/;"	f	class:ScreenRecoveryUI
+StartRecovery	device.h	/^  virtual void StartRecovery() {};$/;"	f	class:Device
+SurfaceDestroy	minui/graphics_adf.cpp	/^void MinuiBackendAdf::SurfaceDestroy(GRSurfaceAdf* surf) {$/;"	f	class:MinuiBackendAdf
+SurfaceInit	minui/graphics_adf.cpp	/^int MinuiBackendAdf::SurfaceInit(const drm_mode_modeinfo* mode, GRSurfaceAdf* surf) {$/;"	f	class:MinuiBackendAdf
+Sync	minui/graphics_adf.cpp	/^void MinuiBackendAdf::Sync(GRSurfaceAdf* surf) {$/;"	f	class:MinuiBackendAdf
+TEST	minadbd/fuse_adb_provider_test.cpp	/^TEST(fuse_adb_provider, read_block_adb) {$/;"	f
+TEST	minadbd/fuse_adb_provider_test.cpp	/^TEST(fuse_adb_provider, read_block_adb_fail_write) {$/;"	f
+TEXT	screen_ui.cpp	/^enum Dimension { PROGRESS = 0, TEXT = 1, ICON = 2, DIMENSION_MAX };$/;"	e	enum:Dimension	file:
+TEXT_FILL	screen_ui.h	/^        HEADER, MENU, MENU_SEL_BG, MENU_SEL_BG_ACTIVE, MENU_SEL_FG, LOG, TEXT_FILL, INFO$/;"	e	enum:ScreenRecoveryUI::UIElement
+TEXT_INDENT	screen_ui.cpp	47;"	d	file:
+TOGGLE	ui.h	/^    enum KeyAction { ENQUEUE, TOGGLE, REBOOT, IGNORE };$/;"	e	enum:RecoveryUI::KeyAction
+UIElement	screen_ui.h	/^    enum UIElement {$/;"	g	class:ScreenRecoveryUI
+UI_WAIT_KEY_TIMEOUT_SEC	ui.cpp	/^static constexpr int UI_WAIT_KEY_TIMEOUT_SEC = 120;$/;"	v	file:
+USERDATA_MOUNT_POINT	roots.cpp	/^static const char* USERDATA_MOUNT_POINT = "\/data";$/;"	v	file:
+USERDATA_NAME	roots.cpp	/^static const char* USERDATA_NAME = "userdata";$/;"	v	file:
+USERDATA_ROOT	mtdutils/sdutils.c	/^static const char *USERDATA_ROOT = "\/data";$/;"	v	file:
+UncryptErrorCode	error_code.h	/^enum UncryptErrorCode {$/;"	g
+VERIZON_STRING	ui.h	/^    enum Icon { NONE, INSTALLING_UPDATE, ERASING, NO_COMMAND, ERROR, FACTORYRESET, FIRMWARE_INSTALLING, INSTALLING_WARNING, VERIZON_STRING, ICON_NUM };$/;"	e	enum:RecoveryUI::Icon
+VIEW_RECOVERY_LOGS	device.h	/^    VIEW_RECOVERY_LOGS = 9,$/;"	e	enum:Device::BuiltinAction
+Volume	roots.h	/^typedef struct fstab_rec Volume;$/;"	t	typeref:struct:fstab_rec
+WIPE_CACHE	device.h	/^    WIPE_CACHE = 6,$/;"	e	enum:Device::BuiltinAction
+WIPE_DATA	device.h	/^    WIPE_DATA = 5,$/;"	e	enum:Device::BuiltinAction
+WaitKey	ui.cpp	/^int RecoveryUI::WaitKey() {$/;"	f	class:RecoveryUI
+WasTextEverVisible	screen_ui.cpp	/^bool ScreenRecoveryUI::WasTextEverVisible() {$/;"	f	class:ScreenRecoveryUI
+ZZYTEST	device.h	/^    ZZYTEST = 13,$/;"	e	enum:Device::BuiltinAction
+_ERROR_CODE_H_	error_code.h	18;"	d
+_GRAPHICS_ADF_H_	minui/graphics_adf.h	18;"	d
+_GRAPHICS_DRM_H_	minui/graphics_drm.h	18;"	d
+_GRAPHICS_FBDEV_H_	minui/graphics_fbdev.h	18;"	d
+_GRAPHICS_H_	minui/graphics.h	18;"	d
+_MINUI_H_	minui/include/minui/minui.h	18;"	d
+_RECOVERY_DEVICE_H	device.h	18;"	d
+__FUSE_ADB_PROVIDER_H	minadbd/fuse_adb_provider.h	18;"	d
+__le16	mtdutils/encdevice.h	75;"	d
+__le32	mtdutils/encdevice.h	74;"	d
+_htc_sdservice_msg_s	mtdutils/encdevice.h	/^typedef struct _htc_sdservice_msg_s {$/;"	s
+adb_data	minadbd/fuse_adb_provider.h	/^struct adb_data {$/;"	s
+add_bad_block_offset	mtdutils/mtdutils.c	/^static void add_bad_block_offset(MtdWriteContext *ctx, off_t pos) {$/;"	f	file:
+animation_fps	screen_ui.h	/^    int animation_fps;$/;"	m	class:ScreenRecoveryUI
+aod_height	screen_ui.h	/^    int aod_height;$/;"	m	class:ScreenRecoveryUI
+backgroundIcon	screen_ui.h	/^    GRSurface* backgroundIcon[ICON_NUM];$/;"	m	class:ScreenRecoveryUI
+bad_block_alloc	mtdutils/mtdutils.c	/^    int bad_block_alloc;$/;"	m	struct:MtdWriteContext	file:
+bad_block_count	mtdutils/mtdutils.c	/^    int bad_block_count;$/;"	m	struct:MtdWriteContext	file:
+bad_block_offsets	mtdutils/mtdutils.c	/^    off_t* bad_block_offsets;$/;"	m	struct:MtdWriteContext	file:
+block_size	minadbd/fuse_adb_provider.h	/^    uint32_t block_size;$/;"	m	struct:adb_data
+brightness_dimmed_	ui.h	/^    unsigned int brightness_dimmed_;$/;"	m	class:RecoveryUI
+brightness_dimmed_value_	ui.h	/^    unsigned int brightness_dimmed_value_;$/;"	m	class:RecoveryUI
+brightness_normal_	ui.h	/^    unsigned int brightness_normal_;$/;"	m	class:RecoveryUI
+brightness_normal_value_	ui.h	/^    unsigned int brightness_normal_value_;$/;"	m	class:RecoveryUI
+buffer	mtdutils/mtdutils.c	/^    char *buffer;$/;"	m	struct:MtdReadContext	file:
+buffer	mtdutils/mtdutils.c	/^    char *buffer;$/;"	m	struct:MtdWriteContext	file:
+c_chain	mtdutils/encdevice.h	/^    unsigned char c_chain;$/;"	m	struct:sdenc_superblock
+c_cipher	mtdutils/encdevice.h	/^    unsigned char c_cipher;$/;"	m	struct:sdenc_superblock
+c_mode	mtdutils/encdevice.h	/^    unsigned char c_mode;$/;"	m	struct:sdenc_superblock
+c_opts	mtdutils/encdevice.h	/^    unsigned char c_opts;$/;"	m	struct:sdenc_superblock
+cb	minui/events.cpp	/^  ev_callback cb;$/;"	m	struct:fd_info	file:
+char_height	minui/font_10x18.h	/^  unsigned char_height;$/;"	m	struct:__anon1
+char_height	minui/include/minui/minui.h	/^    int char_height;$/;"	m	struct:GRFont
+char_height	screen_ui.cpp	/^static int char_height;$/;"	v	file:
+char_height_	screen_ui.h	/^    int char_height_;$/;"	m	class:ScreenRecoveryUI
+char_width	minui/font_10x18.h	/^  unsigned char_width;$/;"	m	struct:__anon1
+char_width	minui/include/minui/minui.h	/^    int char_width;$/;"	m	struct:GRFont
+char_width	screen_ui.cpp	/^static int char_width;$/;"	v	file:
+char_width_	screen_ui.h	/^    int char_width_;$/;"	m	class:ScreenRecoveryUI
+close_adb	minadbd/fuse_adb_provider.cpp	/^static void close_adb(void* data) {$/;"	f	file:
+consecutive_power_keys	ui.h	/^    int consecutive_power_keys;$/;"	m	class:RecoveryUI
+consumed	mtdutils/mtdutils.c	/^    size_t consumed;$/;"	m	struct:MtdReadContext	file:
+convert_ARGB8888_to_RGB565	screen_ui.cpp	/^static void convert_ARGB8888_to_RGB565(unsigned int *src, unsigned short *dst, int LCD_XRES, int LCD_YRES, int Fixed_LCD_XRES) {$/;"	f	file:
+convert_key_to_hex_ascii	mtdutils/encdevice.c	/^void convert_key_to_hex_ascii(unsigned char *master_key, unsigned int keysize, char *master_key_ascii) {$/;"	f
+cookie	minadbd/minadbd_services.cpp	/^    void *cookie;$/;"	m	struct:stinfo	file:
+copy_and_adjust_image	screen_ui.cpp	/^static void copy_and_adjust_image (unsigned short *src, unsigned short *dst, int LCD_XRES, int LCD_YRES, int Fixed_LCD_XRES) {$/;"	f	file:
+count	ui.h	/^        int count;$/;"	m	struct:RecoveryUI::key_timer_t
+create_service_thread	minadbd/minadbd_services.cpp	/^static int create_service_thread(void (*func)(int, void *), void *cookie) {$/;"	f	file:
+crypt_mnt_ftr	mtdutils/encdevice.h	/^struct crypt_mnt_ftr {$/;"	s
+crypto_type_name	mtdutils/encdevice.h	/^  unsigned char crypto_type_name[MAX_CRYPTO_TYPE_NAME_LEN]; \/* The type of encryption$/;"	m	struct:crypt_mnt_ftr
+currentIcon	screen_ui.h	/^    Icon currentIcon;$/;"	m	class:ScreenRecoveryUI
+current_buffer	minui/graphics_drm.h	/^  int current_buffer;$/;"	m	class:MinuiBackendDrm
+current_frame	screen_ui.h	/^    size_t current_frame;$/;"	m	class:ScreenRecoveryUI
+current_surface	minui/graphics_adf.h	/^  unsigned int current_surface;$/;"	m	class:MinuiBackendAdf
+data	minui/include/minui/minui.h	/^    unsigned char* data;$/;"	m	struct:GRSurface
+density_	screen_ui.h	/^    float density_;$/;"	m	class:ScreenRecoveryUI
+dev	minui/graphics_adf.h	/^  adf_device dev;$/;"	m	class:MinuiBackendAdf
+dev	mtdutils/emmcutils.h	/^    char *dev;$/;"	m	struct:__anon2
+device	mounts.cpp	/^    std::string device;$/;"	m	struct:MountedVolume	file:
+device	mtdutils/mounts.c	/^    const char *device;$/;"	m	struct:MountedVolume	file:
+device	recovery.cpp	/^Device* device = NULL;$/;"	v
+device_index	mtdutils/mtdutils.c	/^    int device_index;$/;"	m	struct:MtdPartition	file:
+die	mtdutils/flash_image.c	/^void die(const char *msg, ...) {$/;"	f
+displayed_buffer	minui/graphics_fbdev.h	/^  int displayed_buffer;$/;"	m	class:MinuiBackendFbdev
+dm_dev_create	mtdutils/encdevice.c	/^int dm_dev_create(const char* name,int type,const char* param,const char* dev_path,char* dm_dev_path){$/;"	f
+dm_dev_destroy	mtdutils/encdevice.c	/^int dm_dev_destroy(const char* name){$/;"	f
+dm_dev_exists	mtdutils/encdevice.c	/^int dm_dev_exists(const char* name,char* dm_dev_path){$/;"	f
+dm_dev_find_name_by_id	mtdutils/encdevice.c	/^int dm_dev_find_name_by_id(unsigned int id,char* name){$/;"	f
+double_buffered	minui/graphics_fbdev.h	/^  bool double_buffered;$/;"	m	class:MinuiBackendFbdev
+draw_background_locked	screen_ui.cpp	/^void ScreenRecoveryUI::draw_background_locked() {$/;"	f	class:ScreenRecoveryUI
+draw_foreground_locked	screen_ui.cpp	/^void ScreenRecoveryUI::draw_foreground_locked() {$/;"	f	class:ScreenRecoveryUI
+draw_screen_locked	screen_ui.cpp	/^void ScreenRecoveryUI::draw_screen_locked() {$/;"	f	class:ScreenRecoveryUI
+drm_fd	minui/graphics_drm.h	/^  int drm_fd;$/;"	m	class:MinuiBackendDrm
+drm_format_to_bpp	minui/graphics_drm.cpp	/^static int drm_format_to_bpp(uint32_t format) {$/;"	f	file:
+eMMCPartition	mtdutils/emmcutils.h	/^}eMMCPartition;$/;"	t	typeref:struct:__anon2
+eMMCState	mtdutils/emmcutils.h	/^} eMMCState;$/;"	t	typeref:struct:__anon3
+emmc_erase_partition	mtdutils/emmcutils.c	/^int emmc_erase_partition(const eMMCPartition *partition) {$/;"	f
+emmc_find_partition_by_dev	mtdutils/emmcutils.c	/^const eMMCPartition* emmc_find_partition_by_dev(const char *dev){$/;"	f
+emmc_find_partition_by_name	mtdutils/emmcutils.c	/^const eMMCPartition* emmc_find_partition_by_name(const char *name){$/;"	f
+emmc_format_partition	mtdutils/emmcutils.c	/^int emmc_format_partition(const eMMCPartition *partition,const char* mount_point,const char *filesystem,int length,struct selabel_handle *sehandle){$/;"	f
+emmc_get_bootloader_message	mtdutils/emmcutils.c	/^int emmc_get_bootloader_message(void *data,int size){$/;"	f
+emmc_get_misc_page0	mtdutils/emmcutils.c	/^int emmc_get_misc_page0(void *data,int size){$/;"	f
+emmc_get_page_size	mtdutils/emmcutils.c	/^int emmc_get_page_size(){$/;"	f
+emmc_get_tz_encrypted_key	mtdutils/emmcutils.c	/^int emmc_get_tz_encrypted_key(unsigned char *data,int size,int page_num,int offset){$/;"	f
+emmc_mount_partition	mtdutils/emmcutils.c	/^int emmc_mount_partition(const eMMCPartition *partition,const char *mount_point,const char *filesystem){$/;"	f
+emmc_page_size	mtdutils/emmcutils.c	/^static int emmc_page_size=EMMC_DEFAULT_PAGE_SIZE;$/;"	v	file:
+emmc_read	mtdutils/emmcutils.c	/^int emmc_read(const eMMCPartition *ep,loff_t offset,long length,void *pdata) {$/;"	f
+emmc_scan_partitions	mtdutils/emmcutils.c	/^int emmc_scan_partitions(void){$/;"	f
+emmc_set_bootloader_message	mtdutils/emmcutils.c	/^int emmc_set_bootloader_message(void *data,int size){$/;"	f
+emmc_set_misc_page0	mtdutils/emmcutils.c	/^int emmc_set_misc_page0(void *data,int size){$/;"	f
+emmc_set_page_size	mtdutils/emmcutils.c	/^void emmc_set_page_size(int page_size){$/;"	f
+emmc_umount_partition	mtdutils/emmcutils.c	/^int emmc_umount_partition(const char *devpath,const char *mount_point){$/;"	f
+emmc_write	mtdutils/emmcutils.c	/^int emmc_write(const eMMCPartition *ep,loff_t offset,long length,void *pdata){$/;"	f
+enable_reboot	ui.h	/^    bool enable_reboot;                \/\/ under key_queue_mutex$/;"	m	class:RecoveryUI
+enable_toggle	ui.h	/^    bool enable_toggle;$/;"	m	class:RecoveryUI
+eng_id	minui/graphics_adf.h	/^  adf_id_t eng_id;$/;"	m	class:MinuiBackendAdf
+ensure_path_mounted	roots.cpp	/^int ensure_path_mounted(const char* path) {$/;"	f
+ensure_path_mounted_at	roots.cpp	/^int ensure_path_mounted_at(const char* path, const char* mount_point) {$/;"	f
+ensure_path_unmounted	roots.cpp	/^int ensure_path_unmounted(const char* path) {$/;"	f
+erase_size	mtdutils/mtdutils.c	/^    unsigned int erase_size;$/;"	m	struct:MtdPartition	file:
+erasesize	mtdutils/emmcutils.h	/^    unsigned int erasesize;$/;"	m	struct:__anon2
+erasing_text	screen_ui.h	/^    GRSurface* erasing_text;$/;"	m	class:ScreenRecoveryUI
+error_icon	screen_ui.h	/^    GRSurface* error_icon;$/;"	m	class:ScreenRecoveryUI
+error_text	screen_ui.h	/^    GRSurface* error_text;$/;"	m	class:ScreenRecoveryUI
+ev_add_fd	minui/events.cpp	/^int ev_add_fd(int fd, ev_callback cb) {$/;"	f
+ev_count	minui/events.cpp	/^static unsigned ev_count = 0;$/;"	v	file:
+ev_dev_count	minui/events.cpp	/^static unsigned ev_dev_count = 0;$/;"	v	file:
+ev_dispatch	minui/events.cpp	/^void ev_dispatch(void) {$/;"	f
+ev_exit	minui/events.cpp	/^void ev_exit(void) {$/;"	f
+ev_fdinfo	minui/events.cpp	/^static fd_info ev_fdinfo[MAX_DEVICES + MAX_MISC_FDS];$/;"	v	file:
+ev_get_epollfd	minui/events.cpp	/^int ev_get_epollfd(void) {$/;"	f
+ev_get_input	minui/events.cpp	/^int ev_get_input(int fd, uint32_t epevents, input_event* ev) {$/;"	f
+ev_init	minui/events.cpp	/^int ev_init(ev_callback input_cb) {$/;"	f
+ev_iterate_available_keys	minui/events.cpp	/^void ev_iterate_available_keys(const std::function<void(int)>& f) {$/;"	f
+ev_misc_count	minui/events.cpp	/^static unsigned ev_misc_count = 0;$/;"	v	file:
+ev_sync_key_state	minui/events.cpp	/^int ev_sync_key_state(const ev_set_key_callback& set_key_cb) {$/;"	f
+ev_wait	minui/events.cpp	/^int ev_wait(int timeout) {$/;"	f
+exec_cmd	roots.cpp	/^static int exec_cmd(const char* path, char* const argv[]) {$/;"	f	file:
+ext_check_encrypt	mtdutils/encdevice.c	/^int ext_check_encrypt(const char* devpath){$/;"	f
+ext_check_encrypt_keysize	mtdutils/encdevice.c	/^int ext_check_encrypt_keysize(void){$/;"	f
+failed_decrypt_count	mtdutils/encdevice.h	/^  __le32 failed_decrypt_count; \/* count of # of failed attempts to decrypt and$/;"	m	struct:crypt_mnt_ftr
+fb_fd	minui/graphics_fbdev.h	/^  int fb_fd;$/;"	m	class:MinuiBackendFbdev
+fb_id	minui/graphics_drm.h	/^  uint32_t fb_id;$/;"	m	class:GRSurfaceDrm
+fd	minadbd/minadbd_services.cpp	/^    int fd;$/;"	m	struct:stinfo	file:
+fd	minui/events.cpp	/^  int fd;$/;"	m	struct:fd_info	file:
+fd	minui/graphics_adf.h	/^  int fd;$/;"	m	class:GRSurfaceAdf
+fd	mtdutils/mtdutils.c	/^    int fd;$/;"	m	struct:MtdReadContext	file:
+fd	mtdutils/mtdutils.c	/^    int fd;$/;"	m	struct:MtdWriteContext	file:
+fd_info	minui/events.cpp	/^struct fd_info {$/;"	s	file:
+fence_fd	minui/graphics_adf.h	/^  int fence_fd;$/;"	m	class:GRSurfaceAdf
+file_size	minadbd/fuse_adb_provider.h	/^    uint64_t file_size;$/;"	m	struct:adb_data
+file_viewer_text_	screen_ui.h	/^    char** file_viewer_text_;$/;"	m	class:ScreenRecoveryUI
+filesystem	mounts.cpp	/^    std::string filesystem;$/;"	m	struct:MountedVolume	file:
+filesystem	mtdutils/mounts.c	/^    const char *filesystem;$/;"	m	struct:MountedVolume	file:
+find_crtc_for_connector	minui/graphics_drm.cpp	/^static drmModeCrtc* find_crtc_for_connector(int fd, drmModeRes* resources,$/;"	f	file:
+find_first_connected_connector	minui/graphics_drm.cpp	/^static drmModeConnector* find_first_connected_connector(int fd, drmModeRes* resources) {$/;"	f	file:
+find_mounted_volume_by_device	mounts.cpp	/^MountedVolume* find_mounted_volume_by_device(const char* device) {$/;"	f
+find_mounted_volume_by_device	mtdutils/mounts.c	/^find_mounted_volume_by_device(const char *device)$/;"	f
+find_mounted_volume_by_mount_point	mounts.cpp	/^MountedVolume* find_mounted_volume_by_mount_point(const char* mount_point) {$/;"	f
+find_mounted_volume_by_mount_point	mtdutils/mounts.c	/^find_mounted_volume_by_mount_point(const char *mount_point)$/;"	f
+find_used_connector_by_type	minui/graphics_drm.cpp	/^static drmModeConnector* find_used_connector_by_type(int fd, drmModeRes* resources, unsigned type) {$/;"	f	file:
+flags	mounts.cpp	/^    std::string flags;$/;"	m	struct:MountedVolume	file:
+flags	mtdutils/encdevice.h	/^  __le32 flags;		\/* See above *\/$/;"	m	struct:crypt_mnt_ftr
+flags	mtdutils/mounts.c	/^    const char *flags;$/;"	m	struct:MountedVolume	file:
+font	minui/font_10x18.h	/^} font = {$/;"	v	typeref:struct:__anon1
+format	minui/graphics_adf.h	/^  __u32 format;$/;"	m	class:MinuiBackendAdf
+format_volume	roots.cpp	/^int format_volume(const char* volume) {$/;"	f
+format_volume	roots.cpp	/^int format_volume(const char* volume, const char* directory) {$/;"	f
+free_volume_internals	mtdutils/mounts.c	/^free_volume_internals(const MountedVolume *volume, int zero)$/;"	f	file:
+fs_size	mtdutils/encdevice.h	/^  __le64 fs_size;	\/* Size of the encrypted fs, in 512 byte sectors *\/$/;"	m	struct:crypt_mnt_ftr
+fstab	roots.cpp	/^static struct fstab *fstab = NULL;$/;"	v	typeref:struct:fstab	file:
+ftr_size	mtdutils/encdevice.h	/^  __le32 ftr_size; 	\/* in bytes, not including key following *\/$/;"	m	struct:crypt_mnt_ftr
+func	minadbd/minadbd_services.cpp	/^    void (*func)(int fd, void *cookie);$/;"	m	struct:stinfo	file:
+func	mtdutils/encdevice.h	/^    int func;$/;"	m	struct:_htc_sdservice_msg_s
+g_emmc_state	mtdutils/emmcutils.c	/^static eMMCState g_emmc_state = {$/;"	v	file:
+g_epoll_fd	minui/events.cpp	/^static int g_epoll_fd;$/;"	v	file:
+g_mounts_state	mounts.cpp	/^std::vector<MountedVolume*> g_mounts_state;$/;"	v
+g_mounts_state	mtdutils/mounts.c	/^static MountsState g_mounts_state = {$/;"	v	file:
+g_mtd_state	mtdutils/mtdutils.c	/^static MtdState g_mtd_state = {$/;"	v	file:
+get_menu_selection	recovery.cpp	/^static int get_menu_selection(const char* const* headers, const char* const* items, bool menu_only,$/;"	f	file:
+get_persist_property	mtdutils/sdutils.c	/^void get_persist_property(){$/;"	f
+gr_backend	minui/graphics.cpp	/^static MinuiBackend* gr_backend = nullptr;$/;"	v	file:
+gr_blit	minui/graphics.cpp	/^void gr_blit(GRSurface* source, int sx, int sy, int w, int h, int dx, int dy) {$/;"	f
+gr_clear	minui/graphics.cpp	/^void gr_clear()$/;"	f
+gr_color	minui/graphics.cpp	/^void gr_color(unsigned char r, unsigned char g, unsigned char b, unsigned char a)$/;"	f
+gr_current_a	minui/graphics.cpp	/^static unsigned char gr_current_a = 255;$/;"	v	file:
+gr_current_b	minui/graphics.cpp	/^static unsigned char gr_current_b = 255;$/;"	v	file:
+gr_current_g	minui/graphics.cpp	/^static unsigned char gr_current_g = 255;$/;"	v	file:
+gr_current_r	minui/graphics.cpp	/^static unsigned char gr_current_r = 255;$/;"	v	file:
+gr_draw	minui/graphics.cpp	/^static GRSurface* gr_draw = NULL;$/;"	v	file:
+gr_draw	minui/graphics_fbdev.h	/^  GRSurface* gr_draw;$/;"	m	class:MinuiBackendFbdev
+gr_exit	minui/graphics.cpp	/^void gr_exit() {$/;"	f
+gr_fb_blank	minui/graphics.cpp	/^void gr_fb_blank(bool blank) {$/;"	f
+gr_fb_data	minui/graphics.cpp	/^unsigned short *gr_fb_data(void)$/;"	f
+gr_fb_height	minui/graphics.cpp	/^int gr_fb_height() {$/;"	f
+gr_fb_pixel	minui/graphics.cpp	/^int gr_fb_pixel(void)$/;"	f
+gr_fb_width	minui/graphics.cpp	/^int gr_fb_width() {$/;"	f
+gr_fb_width_modified	minui/graphics.cpp	/^int gr_fb_width_modified()$/;"	f
+gr_fb_width_original	minui/graphics.cpp	/^int gr_fb_width_original()$/;"	f
+gr_fill	minui/graphics.cpp	/^void gr_fill(int x1, int y1, int x2, int y2)$/;"	f
+gr_flip	minui/graphics.cpp	/^void gr_flip() {$/;"	f
+gr_font	minui/graphics.cpp	/^static GRFont* gr_font = NULL;$/;"	v	file:
+gr_font_size	minui/graphics.cpp	/^void gr_font_size(const GRFont* font, int *x, int *y)$/;"	f
+gr_framebuffer	minui/graphics_fbdev.h	/^  GRSurface gr_framebuffer[2];$/;"	m	class:MinuiBackendFbdev
+gr_get_height	minui/graphics.cpp	/^unsigned int gr_get_height(GRSurface* surface) {$/;"	f
+gr_get_width	minui/graphics.cpp	/^unsigned int gr_get_width(GRSurface* surface) {$/;"	f
+gr_init	minui/graphics.cpp	/^int gr_init() {$/;"	f
+gr_init_font	minui/graphics.cpp	/^int gr_init_font(const char* name, GRFont** dest) {$/;"	f
+gr_init_font	minui/graphics.cpp	/^static void gr_init_font(void)$/;"	f	file:
+gr_measure	minui/graphics.cpp	/^int gr_measure(const GRFont* font, const char *s)$/;"	f
+gr_sys_font	minui/graphics.cpp	/^const GRFont* gr_sys_font()$/;"	f
+gr_text	minui/graphics.cpp	/^void gr_text(const GRFont* font, int x, int y, const char *s, bool bold)$/;"	f
+gr_texticon	minui/graphics.cpp	/^void gr_texticon(int x, int y, GRSurface* icon) {$/;"	f
+handle	minui/graphics_drm.h	/^  uint32_t handle;$/;"	m	class:GRSurfaceDrm
+has_down_key	ui.h	/^    bool has_down_key;$/;"	m	class:RecoveryUI
+has_power_key	ui.h	/^    bool has_power_key;$/;"	m	class:RecoveryUI
+has_up_key	ui.h	/^    bool has_up_key;$/;"	m	class:RecoveryUI
+height	minui/font_10x18.h	/^  unsigned height;$/;"	m	struct:__anon1
+height	minui/include/minui/minui.h	/^    int height;$/;"	m	struct:GRSurface
+htc_char_height	screen_ui.cpp	/^static int htc_char_height;$/;"	v	file:
+htc_char_width	screen_ui.cpp	/^static int htc_char_width;$/;"	v	file:
+htc_gr_font	minui/graphics.cpp	/^static GRFont* htc_gr_font = NULL;$/;"	v	file:
+htc_gr_font_size	minui/graphics.cpp	/^void htc_gr_font_size(int *x, int *y)$/;"	f
+htc_gr_init_font	minui/graphics.cpp	/^static void htc_gr_init_font(void) {$/;"	f	file:
+htc_gr_text	minui/graphics.cpp	/^void htc_gr_text(int x, int y, const char *s, bool bold)$/;"	f
+htc_sdservice_msg_s	mtdutils/encdevice.h	/^} htc_sdservice_msg_s;$/;"	t	typeref:struct:_htc_sdservice_msg_s
+init_display_surface	minui/resources.cpp	/^static GRSurface* init_display_surface(png_uint_32 width, png_uint_32 height) {$/;"	f	file:
+input_thread_	ui.h	/^    pthread_t input_thread_;$/;"	m	class:RecoveryUI
+installation	screen_ui.h	/^    GRSurface** installation;$/;"	m	class:ScreenRecoveryUI
+installing_text	screen_ui.h	/^    GRSurface* installing_text;$/;"	m	class:ScreenRecoveryUI
+intf_fd	minui/graphics_adf.h	/^  int intf_fd;$/;"	m	class:MinuiBackendAdf
+introFrames	screen_ui.h	/^    GRSurface** introFrames;$/;"	m	class:ScreenRecoveryUI
+intro_done	screen_ui.h	/^    bool intro_done;$/;"	m	class:ScreenRecoveryUI
+intro_frames	screen_ui.h	/^    size_t intro_frames;$/;"	m	class:ScreenRecoveryUI
+ioctl_init	mtdutils/encdevice.c	/^void ioctl_init(struct dm_ioctl *io, size_t dataSize, const char *name, unsigned flags) {$/;"	f
+kArgsParsingFailure	error_code.h	/^  kArgsParsingFailure = 100,$/;"	e	enum:CauseCode
+kBootreasonInBlacklist	error_code.h	/^  kBootreasonInBlacklist,$/;"	e	enum:ErrorCode
+kFileGetPropFailure	error_code.h	/^  kFileGetPropFailure,$/;"	e	enum:CauseCode
+kFileOpenFailure	error_code.h	/^  kFileOpenFailure,$/;"	e	enum:CauseCode
+kFileRenameFailure	error_code.h	/^  kFileRenameFailure,$/;"	e	enum:CauseCode
+kFreadFailure	error_code.h	/^  kFreadFailure,$/;"	e	enum:CauseCode
+kFsyncFailure	error_code.h	/^  kFsyncFailure,$/;"	e	enum:CauseCode
+kFwriteFailure	error_code.h	/^  kFwriteFailure,$/;"	e	enum:CauseCode
+kHighlightDown	device.h	/^  static const int kHighlightDown = -3;$/;"	m	class:Device
+kHighlightUp	device.h	/^  static const int kHighlightUp = -2;$/;"	m	class:Device
+kInvokeItem	device.h	/^  static const int kInvokeItem = -4;$/;"	m	class:Device
+kLayouts	screen_ui.cpp	/^static constexpr int kLayouts[LAYOUT_MAX][DIMENSION_MAX] = {$/;"	v	file:
+kLibfecFailure	error_code.h	/^  kLibfecFailure,$/;"	e	enum:CauseCode
+kLowBattery	error_code.h	/^  kLowBattery = 20,$/;"	e	enum:ErrorCode
+kLseekFailure	error_code.h	/^  kLseekFailure,$/;"	e	enum:CauseCode
+kNoAction	device.h	/^  static const int kNoAction = -1;$/;"	m	class:Device
+kNoCause	error_code.h	/^  kNoCause = -1,$/;"	e	enum:CauseCode
+kNoError	error_code.h	/^  kNoError = -1,$/;"	e	enum:ErrorCode
+kPackageCompatibilityFailure	error_code.h	/^  kPackageCompatibilityFailure,$/;"	e	enum:ErrorCode
+kPackageExtractFileFailure	error_code.h	/^  kPackageExtractFileFailure,$/;"	e	enum:CauseCode
+kRebootFailure	error_code.h	/^  kRebootFailure,$/;"	e	enum:CauseCode
+kSetMetadataFailure	error_code.h	/^  kSetMetadataFailure,$/;"	e	enum:CauseCode
+kStashCreationFailure	error_code.h	/^  kStashCreationFailure,$/;"	e	enum:CauseCode
+kSymlinkFailure	error_code.h	/^  kSymlinkFailure,$/;"	e	enum:CauseCode
+kTune2FsFailure	error_code.h	/^  kTune2FsFailure,$/;"	e	enum:CauseCode
+kUncryptBlockOpenError	error_code.h	/^  kUncryptBlockOpenError,$/;"	e	enum:UncryptErrorCode
+kUncryptErrorPlaceholder	error_code.h	/^  kUncryptErrorPlaceholder = 50,$/;"	e	enum:UncryptErrorCode
+kUncryptFileCloseError	error_code.h	/^  kUncryptFileCloseError,$/;"	e	enum:UncryptErrorCode
+kUncryptFileOpenError	error_code.h	/^  kUncryptFileOpenError,$/;"	e	enum:UncryptErrorCode
+kUncryptFileRemoveError	error_code.h	/^  kUncryptFileRemoveError,$/;"	e	enum:UncryptErrorCode
+kUncryptFileRenameError	error_code.h	/^  kUncryptFileRenameError,$/;"	e	enum:UncryptErrorCode
+kUncryptFileStatError	error_code.h	/^  kUncryptFileStatError,$/;"	e	enum:UncryptErrorCode
+kUncryptFileSyncError	error_code.h	/^  kUncryptFileSyncError,$/;"	e	enum:UncryptErrorCode
+kUncryptFstabReadError	error_code.h	/^  kUncryptFstabReadError,$/;"	e	enum:UncryptErrorCode
+kUncryptIoctlError	error_code.h	/^  kUncryptIoctlError,$/;"	e	enum:UncryptErrorCode
+kUncryptNoError	error_code.h	/^  kUncryptNoError = -1,$/;"	e	enum:UncryptErrorCode
+kUncryptPackageMissingError	error_code.h	/^  kUncryptPackageMissingError,$/;"	e	enum:UncryptErrorCode
+kUncryptReadError	error_code.h	/^  kUncryptReadError,$/;"	e	enum:UncryptErrorCode
+kUncryptSocketAcceptError	error_code.h	/^  kUncryptSocketAcceptError,$/;"	e	enum:UncryptErrorCode
+kUncryptSocketListenError	error_code.h	/^  kUncryptSocketListenError,$/;"	e	enum:UncryptErrorCode
+kUncryptSocketOpenError	error_code.h	/^  kUncryptSocketOpenError,$/;"	e	enum:UncryptErrorCode
+kUncryptSocketWriteError	error_code.h	/^  kUncryptSocketWriteError,$/;"	e	enum:UncryptErrorCode
+kUncryptTimeoutError	error_code.h	/^  kUncryptTimeoutError = 100,$/;"	e	enum:UncryptErrorCode
+kUncryptWriteError	error_code.h	/^  kUncryptWriteError,$/;"	e	enum:UncryptErrorCode
+kVendorFailure	error_code.h	/^  kVendorFailure = 200$/;"	e	enum:CauseCode
+kZipOpenFailure	error_code.h	/^  kZipOpenFailure,$/;"	e	enum:ErrorCode
+kZipVerificationFailure	error_code.h	/^  kZipVerificationFailure,$/;"	e	enum:ErrorCode
+key_code	ui.h	/^        int key_code;$/;"	m	struct:RecoveryUI::key_timer_t
+key_down_count	ui.h	/^    int key_down_count;                \/\/ under key_queue_mutex$/;"	m	class:RecoveryUI
+key_hash	mtdutils/encdevice.h	/^    unsigned int key_hash;$/;"	m	struct:sdenc_superblock
+key_last_down	ui.h	/^    int key_last_down;                 \/\/ under key_queue_mutex$/;"	m	class:RecoveryUI
+key_long_press	ui.h	/^    bool key_long_press;               \/\/ under key_queue_mutex$/;"	m	class:RecoveryUI
+key_pressed	ui.h	/^    char key_pressed[KEY_MAX + 1];     \/\/ under key_queue_mutex$/;"	m	class:RecoveryUI
+key_queue	ui.h	/^    int key_queue[256], key_queue_len;$/;"	m	class:RecoveryUI
+key_queue_cond	ui.h	/^    pthread_cond_t key_queue_cond;$/;"	m	class:RecoveryUI
+key_queue_len	ui.h	/^    int key_queue[256], key_queue_len;$/;"	m	class:RecoveryUI
+key_queue_mutex	ui.h	/^    pthread_mutex_t key_queue_mutex;$/;"	m	class:RecoveryUI
+key_timer_t	ui.h	/^    struct key_timer_t {$/;"	s	class:RecoveryUI
+keysize	mtdutils/encdevice.h	/^  __le32 keysize;	\/* in bytes *\/$/;"	m	struct:crypt_mnt_ftr
+last_key	ui.h	/^    int last_key;$/;"	m	class:RecoveryUI
+layout_	screen_ui.h	/^    int layout_;$/;"	m	class:ScreenRecoveryUI
+load_volume_table	roots.cpp	/^void load_volume_table()$/;"	f
+locale	recovery.cpp	/^static std::string locale;$/;"	v	file:
+locale_	ui.h	/^    std::string locale_;$/;"	m	class:RecoveryUI
+log_characters	recovery.cpp	/^static constexpr char log_characters[] = "VDIWEF";$/;"	v	file:
+loopFrames	screen_ui.h	/^    GRSurface** loopFrames;$/;"	m	class:ScreenRecoveryUI
+loop_frames	screen_ui.h	/^    size_t loop_frames;$/;"	m	class:ScreenRecoveryUI
+magic	mtdutils/encdevice.h	/^    unsigned int magic;$/;"	m	struct:sdenc_superblock
+magic	mtdutils/encdevice.h	/^  __le32 magic;		\/* See above *\/$/;"	m	struct:crypt_mnt_ftr
+main	minui/mkfont.c	/^int main(int argc, char *argv)$/;"	f
+main	mtdutils/flash_image.c	/^int main(int argc, char **argv) {$/;"	f
+main	recovery.cpp	/^int main(int argc, char **argv) {$/;"	f
+main_monitor_connector	minui/graphics_drm.h	/^  drmModeConnector* main_monitor_connector;$/;"	m	class:MinuiBackendDrm
+main_monitor_crtc	minui/graphics_drm.h	/^  drmModeCrtc* main_monitor_crtc;$/;"	m	class:MinuiBackendDrm
+major_version	mtdutils/encdevice.h	/^  __le16 major_version;$/;"	m	struct:crypt_mnt_ftr
+make_device	default_device.cpp	/^Device* make_device() {$/;"	f
+malloc_surface	minui/resources.cpp	/^static GRSurface* malloc_surface(size_t data_size) {$/;"	f	file:
+matches_locale	minui/resources.cpp	/^bool matches_locale(const std::string& prefix, const std::string& locale) {$/;"	f
+max_stage	screen_ui.h	/^    int stage, max_stage;$/;"	m	class:ScreenRecoveryUI
+menu_	screen_ui.h	/^    char** menu_;$/;"	m	class:ScreenRecoveryUI
+menu_headers_	screen_ui.h	/^    const char* const* menu_headers_;$/;"	m	class:ScreenRecoveryUI
+menu_items	screen_ui.h	/^    int menu_items, menu_sel;$/;"	m	class:ScreenRecoveryUI
+menu_sel	screen_ui.h	/^    int menu_items, menu_sel;$/;"	m	class:ScreenRecoveryUI
+minadbd_cflags	minadbd/Android.mk	/^minadbd_cflags := \\$/;"	m
+minadbd_main	minadbd/minadbd.cpp	/^int minadbd_main() {$/;"	f
+minor_version	mtdutils/encdevice.h	/^  __le16 minor_version;$/;"	m	struct:crypt_mnt_ftr
+mount_point	mounts.cpp	/^    std::string mount_point;$/;"	m	struct:MountedVolume	file:
+mount_point	mtdutils/mounts.c	/^    const char *mount_point;$/;"	m	struct:MountedVolume	file:
+mtd_erase_blocks	mtdutils/mtdutils.c	/^off_t mtd_erase_blocks(MtdWriteContext *ctx, int blocks)$/;"	f
+mtd_find_partition_by_name	mtdutils/mtdutils.c	/^mtd_find_partition_by_name(const char *name)$/;"	f
+mtd_mount_partition	mtdutils/mtdutils.c	/^mtd_mount_partition(const MtdPartition *partition, const char *mount_point,$/;"	f
+mtd_partition_info	mtdutils/mtdutils.c	/^mtd_partition_info(const MtdPartition *partition,$/;"	f
+mtd_read_close	mtdutils/mtdutils.c	/^void mtd_read_close(MtdReadContext *ctx)$/;"	f
+mtd_read_data	mtdutils/mtdutils.c	/^ssize_t mtd_read_data(MtdReadContext *ctx, char *data, size_t len)$/;"	f
+mtd_read_partition	mtdutils/mtdutils.c	/^MtdReadContext *mtd_read_partition(const MtdPartition *partition)$/;"	f
+mtd_scan_partitions	mtdutils/mtdutils.c	/^mtd_scan_partitions()$/;"	f
+mtd_write_close	mtdutils/mtdutils.c	/^int mtd_write_close(MtdWriteContext *ctx)$/;"	f
+mtd_write_data	mtdutils/mtdutils.c	/^ssize_t mtd_write_data(MtdWriteContext *ctx, const char *data, size_t len)$/;"	f
+mtd_write_partition	mtdutils/mtdutils.c	/^MtdWriteContext *mtd_write_partition(const MtdPartition *partition)$/;"	f
+n_surfaces	minui/graphics_adf.h	/^  unsigned int n_surfaces;$/;"	m	class:MinuiBackendAdf
+name	mtdutils/emmcutils.h	/^    char *name;$/;"	m	struct:__anon2
+name	mtdutils/mtdutils.c	/^    char *name;$/;"	m	struct:MtdPartition	file:
+no_command_text	screen_ui.h	/^    GRSurface* no_command_text;$/;"	m	class:ScreenRecoveryUI
+now	screen_ui.cpp	/^static double now() {$/;"	f	file:
+npolledevents	minui/events.cpp	/^static int npolledevents;$/;"	v	file:
+offset	minui/graphics_adf.h	/^  __u32 offset;$/;"	m	class:GRSurfaceAdf
+offset	mtdutils/encdevice.h	/^    int offset;$/;"	m	struct:_htc_sdservice_msg_s
+open_png	minui/resources.cpp	/^static int open_png(const char* name, png_structp* png_ptr, png_infop* info_ptr,$/;"	f	file:
+outside	minui/graphics.cpp	/^static bool outside(int x, int y)$/;"	f	file:
+override	minui/graphics_adf.h	/^  GRSurface* Flip() override;$/;"	m	class:MinuiBackendAdf
+override	minui/graphics_adf.h	/^  GRSurface* Init() override;$/;"	m	class:MinuiBackendAdf
+override	minui/graphics_adf.h	/^  void Blank(bool) override;$/;"	m	class:MinuiBackendAdf
+override	minui/graphics_adf.h	/^  ~MinuiBackendAdf() override;$/;"	m	class:MinuiBackendAdf
+override	minui/graphics_drm.h	/^  GRSurface* Flip() override;$/;"	m	class:MinuiBackendDrm
+override	minui/graphics_drm.h	/^  GRSurface* Init() override;$/;"	m	class:MinuiBackendDrm
+override	minui/graphics_drm.h	/^  void Blank(bool) override;$/;"	m	class:MinuiBackendDrm
+override	minui/graphics_drm.h	/^  ~MinuiBackendDrm() override;$/;"	m	class:MinuiBackendDrm
+override	minui/graphics_fbdev.h	/^  GRSurface* Flip() override;$/;"	m	class:MinuiBackendFbdev
+override	minui/graphics_fbdev.h	/^  GRSurface* Init() override;$/;"	m	class:MinuiBackendFbdev
+override	minui/graphics_fbdev.h	/^  void Blank(bool) override;$/;"	m	class:MinuiBackendFbdev
+override	minui/graphics_fbdev.h	/^  ~MinuiBackendFbdev() override;$/;"	m	class:MinuiBackendFbdev
+override	screen_ui.h	/^    bool Init(const std::string& locale) override;$/;"	m	class:ScreenRecoveryUI
+override	screen_ui.h	/^    bool IsTextVisible() override;$/;"	m	class:ScreenRecoveryUI
+override	screen_ui.h	/^    bool WasTextEverVisible() override;$/;"	m	class:ScreenRecoveryUI
+override	screen_ui.h	/^    void SetProgress(float fraction) override;$/;"	m	class:ScreenRecoveryUI
+override	screen_ui.h	/^    void SetProgressType(ProgressType type) override;$/;"	m	class:ScreenRecoveryUI
+override	screen_ui.h	/^    void SetStage(int current, int max) override;$/;"	m	class:ScreenRecoveryUI
+override	screen_ui.h	/^    void ShowProgress(float portion, float seconds) override;$/;"	m	class:ScreenRecoveryUI
+override	screen_ui.h	/^    void ShowText(bool visible) override;$/;"	m	class:ScreenRecoveryUI
+overscan_offset_x	minui/graphics.cpp	/^static int overscan_offset_x = 0;$/;"	v	file:
+overscan_offset_y	minui/graphics.cpp	/^static int overscan_offset_y = 0;$/;"	v	file:
+overscan_percent	minui/graphics.cpp	/^static int overscan_percent = OVERSCAN_PERCENT;$/;"	v	file:
+pagesIdentical	screen_ui.h	/^    bool pagesIdentical;$/;"	m	class:ScreenRecoveryUI
+partition	mtdutils/mtdutils.c	/^    const MtdPartition *partition;$/;"	m	struct:MtdReadContext	file:
+partition	mtdutils/mtdutils.c	/^    const MtdPartition *partition;$/;"	m	struct:MtdWriteContext	file:
+partition_count	mtdutils/emmcutils.h	/^    int partition_count;$/;"	m	struct:__anon3
+partition_count	mtdutils/mtdutils.c	/^    int partition_count;$/;"	m	struct:__anon4	file:
+partitions	mtdutils/emmcutils.h	/^    eMMCPartition *partitions;$/;"	m	struct:__anon3
+partitions	mtdutils/mtdutils.c	/^    MtdPartition *partitions;$/;"	m	struct:__anon4	file:
+partitions_allocd	mtdutils/emmcutils.h	/^    int partitions_allocd;$/;"	m	struct:__anon3
+partitions_allocd	mtdutils/mtdutils.c	/^    int partitions_allocd;$/;"	m	struct:__anon4	file:
+pitch	minui/graphics_adf.h	/^  __u32 pitch;$/;"	m	class:GRSurfaceAdf
+pixel_bytes	minui/include/minui/minui.h	/^    int pixel_bytes;$/;"	m	struct:GRSurface
+polledevents	minui/events.cpp	/^static epoll_event polledevents[MAX_DEVICES + MAX_MISC_FDS];$/;"	v	file:
+print_hex	print_sha1.h	/^static std::string print_hex(const uint8_t* bytes, size_t len) {$/;"	f
+print_sha1	print_sha1.h	/^static std::string print_sha1(const uint8_t sha1[SHA_DIGEST_LENGTH]) {$/;"	f
+print_sha1	print_sha1.h	/^static std::string print_sha1(const uint8_t* sha1, size_t len) {$/;"	f
+progress	screen_ui.h	/^    float progressScopeStart, progressScopeSize, progress;$/;"	m	class:ScreenRecoveryUI
+progressBarEmpty	screen_ui.h	/^    GRSurface* progressBarEmpty = nullptr;$/;"	m	class:ScreenRecoveryUI
+progressBarFill	screen_ui.h	/^    GRSurface* progressBarFill = nullptr;$/;"	m	class:ScreenRecoveryUI
+progressBarIndeterminate	screen_ui.h	/^    GRSurface* progressBarIndeterminate[PROGRESSBAR_STATES];$/;"	m	class:ScreenRecoveryUI
+progressBarType	screen_ui.h	/^    ProgressType progressBarType;$/;"	m	class:ScreenRecoveryUI
+progressScopeDuration	screen_ui.h	/^    double progressScopeTime, progressScopeDuration;$/;"	m	class:ScreenRecoveryUI
+progressScopeSize	screen_ui.h	/^    float progressScopeStart, progressScopeSize, progress;$/;"	m	class:ScreenRecoveryUI
+progressScopeStart	screen_ui.h	/^    float progressScopeStart, progressScopeSize, progress;$/;"	m	class:ScreenRecoveryUI
+progressScopeTime	screen_ui.h	/^    double progressScopeTime, progressScopeDuration;$/;"	m	class:ScreenRecoveryUI
+progress_thread_	screen_ui.h	/^    pthread_t progress_thread_;$/;"	m	class:ScreenRecoveryUI
+prompt_and_wait	recovery.cpp	/^static Device::BuiltinAction prompt_and_wait(Device* device, int status) {$/;"	f	file:
+read_block	mtdutils/mtdutils.c	/^static int read_block(const MtdPartition *partition, int fd, char *data)$/;"	f	file:
+read_block_adb	minadbd/fuse_adb_provider.cpp	/^int read_block_adb(void* data, uint32_t block, uint8_t* buffer, uint32_t fetch_size) {$/;"	f
+rel_sum	ui.h	/^    int rel_sum;$/;"	m	class:RecoveryUI
+remount_read_only	mounts.cpp	/^int remount_read_only(MountedVolume* volume) {$/;"	f
+remount_read_only	mtdutils/mounts.c	/^remount_read_only(const MountedVolume* volume)$/;"	f
+req_buf	mtdutils/encdevice.h	/^    unsigned char *req_buf;$/;"	m	struct:_htc_sdservice_msg_s
+req_len	mtdutils/encdevice.h	/^    int req_len;$/;"	m	struct:_htc_sdservice_msg_s
+res_create_alpha_surface	minui/resources.cpp	/^int res_create_alpha_surface(const char* name, GRSurface** pSurface) {$/;"	f
+res_create_display_surface	minui/resources.cpp	/^int res_create_display_surface(const char* name, GRSurface** pSurface) {$/;"	f
+res_create_localized_alpha_surface	minui/resources.cpp	/^int res_create_localized_alpha_surface(const char* name,$/;"	f
+res_create_multi_display_surface	minui/resources.cpp	/^int res_create_multi_display_surface(const char* name, int* frames, int* fps,$/;"	f
+res_free_surface	minui/resources.cpp	/^void res_free_surface(GRSurface* surface) {$/;"	f
+resp_buf	mtdutils/encdevice.h	/^    unsigned char *resp_buf;$/;"	m	struct:_htc_sdservice_msg_s
+resp_len	mtdutils/encdevice.h	/^    int resp_len;$/;"	m	struct:_htc_sdservice_msg_s
+row_bytes	minui/include/minui/minui.h	/^    int row_bytes;$/;"	m	struct:GRSurface
+rpipes	mtdutils/sdutils.c	/^int rpipes [2];$/;"	v
+rtl_locale_	ui.h	/^    bool rtl_locale_;$/;"	m	class:RecoveryUI
+run_adb_fuse	minadbd/fuse_adb_provider.cpp	/^int run_adb_fuse(int sfd, uint64_t file_size, uint32_t block_size) {$/;"	f
+run_graphics_test	recovery.cpp	/^static void run_graphics_test() {$/;"	f	file:
+rundata	minui/font_10x18.h	/^  unsigned char rundata[2973];$/;"	m	struct:__anon1
+scan_mounted_volumes	mounts.cpp	/^bool scan_mounted_volumes() {$/;"	f
+scan_mounted_volumes	mtdutils/mounts.c	/^scan_mounted_volumes()$/;"	f
+screensaver_state_	ui.h	/^    ScreensaverState screensaver_state_;$/;"	m	class:RecoveryUI
+sd_format_partition	mtdutils/sdutils.c	/^int sd_format_partition(const char *devpath,const char *mount_point,const char *filesystem){$/;"	f
+sd_mount_partition	mtdutils/sdutils.c	/^int sd_mount_partition(const char *devpath1,const char *devpath2,const char *mount_point,const char *filesystem){$/;"	f
+sd_umount_partition	mtdutils/sdutils.c	/^int sd_umount_partition(const char *devpath,const char *mount_point){$/;"	f
+sdenc_superblock	mtdutils/encdevice.h	/^struct sdenc_superblock {$/;"	s
+sehandle	recovery.cpp	/^struct selabel_handle* sehandle;$/;"	v	typeref:struct:selabel_handle
+service_bootstrap_func	minadbd/minadbd_services.cpp	/^void service_bootstrap_func(void* x) {$/;"	f
+service_to_fd	minadbd/minadbd_services.cpp	/^int service_to_fd(const char* name, const atransport* transport) {$/;"	f
+setup_install_mounts	roots.cpp	/^int setup_install_mounts() {$/;"	f
+sfd	minadbd/fuse_adb_provider.h	/^    int sfd;  \/\/ file descriptor for the adb channel$/;"	m	struct:adb_data
+short_sha1	print_sha1.h	/^static std::string short_sha1(const uint8_t sha1[SHA_DIGEST_LENGTH]) {$/;"	f
+showWVZFRmessage	screen_ui.cpp	/^bool showWVZFRmessage = false;$/;"	v
+show_menu	screen_ui.h	/^    bool show_menu;$/;"	m	class:ScreenRecoveryUI
+show_percentage	screen_ui.cpp	/^void ScreenRecoveryUI::show_percentage()$/;"	f	class:ScreenRecoveryUI
+show_text	screen_ui.h	/^    bool show_text;$/;"	m	class:ScreenRecoveryUI
+show_text_ever	screen_ui.h	/^    bool show_text_ever;   \/\/ has show_text ever been true?$/;"	m	class:ScreenRecoveryUI
+sideload_host_service	minadbd/minadbd_services.cpp	/^static void sideload_host_service(int sfd, void* data) {$/;"	f	file:
+size	mtdutils/emmcutils.h	/^    unsigned int size;$/;"	m	struct:__anon2
+size	mtdutils/mtdutils.c	/^    unsigned int size;$/;"	m	struct:MtdPartition	file:
+spare1	mtdutils/encdevice.h	/^  __le32 spare1;	\/* ignored *\/$/;"	m	struct:crypt_mnt_ftr
+stage	screen_ui.h	/^    int stage, max_stage;$/;"	m	class:ScreenRecoveryUI
+stageMarkerEmpty	screen_ui.h	/^    GRSurface* stageMarkerEmpty = nullptr;$/;"	m	class:ScreenRecoveryUI
+stageMarkerFill	screen_ui.h	/^    GRSurface* stageMarkerFill = nullptr;$/;"	m	class:ScreenRecoveryUI
+stinfo	minadbd/minadbd_services.cpp	/^struct stinfo {$/;"	s	file:
+stinfo	minadbd/minadbd_services.cpp	/^typedef struct stinfo stinfo;$/;"	t	typeref:struct:stinfo	file:
+stored	mtdutils/mtdutils.c	/^    size_t stored;$/;"	m	struct:MtdWriteContext	file:
+surfaces	minui/graphics_adf.h	/^  GRSurfaceAdf surfaces[2];$/;"	m	class:MinuiBackendAdf
+test_bit	minui/events.cpp	/^static bool test_bit(size_t bit, unsigned long* array) { \/\/ NOLINT$/;"	f	file:
+text_	screen_ui.h	/^    char** text_;$/;"	m	class:ScreenRecoveryUI
+text_blend	minui/graphics.cpp	/^static void text_blend(unsigned char* src_p, int src_row_bytes,$/;"	f	file:
+text_col_	screen_ui.h	/^    size_t text_col_, text_row_, text_top_;$/;"	m	class:ScreenRecoveryUI
+text_cols_	screen_ui.h	/^    size_t text_cols_, text_rows_;$/;"	m	class:ScreenRecoveryUI
+text_row_	screen_ui.h	/^    size_t text_col_, text_row_, text_top_;$/;"	m	class:ScreenRecoveryUI
+text_rows_	screen_ui.h	/^    size_t text_cols_, text_rows_;$/;"	m	class:ScreenRecoveryUI
+text_top_	screen_ui.h	/^    size_t text_col_, text_row_, text_top_;$/;"	m	class:ScreenRecoveryUI
+texture	minui/include/minui/minui.h	/^    GRSurface* texture;$/;"	m	struct:GRFont
+time_key	ui.cpp	/^void RecoveryUI::time_key(int key_code, int count) {$/;"	f	class:RecoveryUI
+time_key_helper	ui.cpp	/^void* RecoveryUI::time_key_helper(void* cookie) {$/;"	f	class:RecoveryUI
+transform_rgb_to_draw	minui/resources.cpp	/^static void transform_rgb_to_draw(unsigned char* input_row,$/;"	f	file:
+tz_decrypt_key	mtdutils/encdevice.c	/^int tz_decrypt_key(unsigned char *input_buf, unsigned char *output_buf,int keylen){$/;"	f
+ui	recovery.cpp	/^RecoveryUI* ui = nullptr;$/;"	v
+ui	ui.h	/^        RecoveryUI* ui;$/;"	m	struct:RecoveryUI::key_timer_t
+ui_	device.h	/^  RecoveryUI* ui_;$/;"	m	class:Device
+unmount_mounted_volume	mounts.cpp	/^int unmount_mounted_volume(MountedVolume* volume) {$/;"	f
+unmount_mounted_volume	mtdutils/mounts.c	/^unmount_mounted_volume(const MountedVolume *volume)$/;"	f
+updateMutex	screen_ui.h	/^    pthread_mutex_t updateMutex;$/;"	m	class:ScreenRecoveryUI
+update_progress_locked	screen_ui.cpp	/^void ScreenRecoveryUI::update_progress_locked() {$/;"	f	class:ScreenRecoveryUI
+update_screen_locked	screen_ui.cpp	/^void ScreenRecoveryUI::update_screen_locked() {$/;"	f	class:ScreenRecoveryUI
+ver	mtdutils/encdevice.h	/^    unsigned char ver;$/;"	m	struct:sdenc_superblock
+vfat_check_encrypt	mtdutils/encdevice.c	/^int vfat_check_encrypt(const char* devpath,unsigned int* keyhash){$/;"	f
+vfat_check_key	mtdutils/encdevice.c	/^int vfat_check_key(unsigned int keyhash,unsigned char* key, int keylen){$/;"	f
+vi	minui/graphics_fbdev.h	/^  fb_var_screeninfo vi;$/;"	m	class:MinuiBackendFbdev
+volume_count	mtdutils/mounts.c	/^    int volume_count;$/;"	m	struct:__anon6	file:
+volume_for_path	roots.cpp	/^Volume* volume_for_path(const char* path) {$/;"	f
+volumes	mtdutils/mounts.c	/^    MountedVolume *volumes;$/;"	m	struct:__anon6	file:
+volumes_allocd	mtdutils/mounts.c	/^    int volumes_allocd;$/;"	m	struct:__anon6	file:
+width	minui/font_10x18.h	/^  unsigned width;$/;"	m	struct:__anon1
+width	minui/include/minui/minui.h	/^    int width;$/;"	m	struct:GRSurface
+wpipes	mtdutils/sdutils.c	/^int wpipes [2];$/;"	v
+write_block	mtdutils/mtdutils.c	/^static int write_block(MtdWriteContext *ctx, const char *data)$/;"	f	file:
+~Device	device.h	/^  virtual ~Device() {}$/;"	f	class:Device
+~MinuiBackend	minui/graphics.h	/^  virtual ~MinuiBackend() {};$/;"	f	class:MinuiBackend
+~MinuiBackendAdf	minui/graphics_adf.cpp	/^MinuiBackendAdf::~MinuiBackendAdf() {$/;"	f	class:MinuiBackendAdf
+~MinuiBackendDrm	minui/graphics_drm.cpp	/^MinuiBackendDrm::~MinuiBackendDrm() {$/;"	f	class:MinuiBackendDrm
+~MinuiBackendFbdev	minui/graphics_fbdev.cpp	/^MinuiBackendFbdev::~MinuiBackendFbdev() {$/;"	f	class:MinuiBackendFbdev
+~RecoveryUI	ui.h	/^    virtual ~RecoveryUI() { }$/;"	f	class:RecoveryUI

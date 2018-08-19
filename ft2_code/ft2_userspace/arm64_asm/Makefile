@@ -1,0 +1,14 @@
+TOOLCHAIN=/home/zzy1/android-21-arm64
+SYSROOT=${TOOLCHAIN}/sysroot
+
+CC=${TOOLCHAIN}/bin/aarch64-linux-android-gcc
+CPP=${TOOLCHAIN}/bin/aarch64-linux-android-g++
+AS=${TOOLCHAIN}/bin/aarch64-linux-android-as
+STRIP=${TOOLCHAIN}/bin/aarch64-linux-android-strip
+CFLAGS=-O3 -fPIE -pie -g3 --sysroot=${SYSROOT}
+
+all: hello
+hello: hello.s
+	${CC} ${CFLAGS} -o hello hello.s
+hello1: hello1.s
+	${CC} ${CFLAGS} -o hello1 hello1.s

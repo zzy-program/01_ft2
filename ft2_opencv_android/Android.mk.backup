@@ -1,0 +1,31 @@
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE:= ft2_opencv
+LOCAL_SRC_FILES:= \
+    ft2_opencv.cpp
+
+LOCAL_C_INCLUDES := \
+       external/opencv/cv/include  \
+       external/opencv/cxcore/include  \
+       external/opencv/cvaux/include  \
+       external/opencv/ml/include  \
+       external/opencv/otherlibs/highgui \
+       external/libpng \
+       external/zlib
+
+LOCAL_STATIC_LIBRARIES := \
+    libopencv \
+       libcvhighgui \
+       libcxcore \
+       libcv \
+       libcvaux \
+       libcvml
+
+LOCAL_SHARED_LIBRARIES := \
+       libjpeg \
+       libpng \
+       libz
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_CFLAGS += -Wall -Werror
+include $(BUILD_EXECUTABLE)
